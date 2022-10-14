@@ -21,11 +21,11 @@
             <label for="menu-header">Каталог</label>
             <input type="text" name="menu-header" id="menu-header" list="menu-header-list">
             <datalist id="menu-header-list">
-              <option value="Новинки"><a class="menu-header-link" href="#"></a></option>
-                <option value="Сливочное"><a class="menu-header-link" href="#"></a></option>
-                <option value="Щербеты"><a class="menu-header-link" href="#"></a></option>
-                <option value="Фруктовый лед"><a class="menu-header-link" href="#"></a></option>
-                <option value="Мелорин"><a class="menu-header-link" href="#"></a></option>
+              <option class="menu-header-item menu-header-item-new-products" value="new-products">Новинки</option>
+                <option class="menu-header-item" value="creamy">Сливочное</option>
+                <option class="menu-header-item" value="sherbet">Щербеты</option>
+                <option class="menu-header-item" value="fruit ice">Фруктовый лед</option>
+                <option class="menu-header-item" value="melorine">Мелорин</option>
               </datalist>
           </li>
           <li class="navigation-item">
@@ -216,15 +216,15 @@
       <section class="delivery">
         <h2 class="delivery-title">Доставка любимого мороженого на дом</h2>
         <p class="delivery-description">Хочется полакомиться любимым десертом, но нет времени съездить в магазин? Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
           <h3><span class="visually-hidden">Форма доставки</span></h3>
           <p class="delivery-form-description">Укажите адрес и дату доставки, и мы свяжемся с вами, чтобы подтвердить заказ.</p>
-          <label for="delivery-date">Дата</label>
-          <input type="text" placeholder="01.04.2020" name="delivery-date" required>
-          <label for="delivery-tel">Телефон</label>
-          <input type="text" placeholder="+7 800 999-00-00" name="delivery-tel">
-          <label for="delivery-adress">Адрес</label>
-          <input type="text" placeholder="ул. Большая Конюшенная, 19/8" name="delivery-adress" required>
+          <label class="delivery-form-label" for="delivery-form-date">Дата</label>
+          <input type="text" placeholder="01.04.2020" name="delivery-form-date" id="delivery-form-date" required>
+          <label class="delivery-form-label" for="delivery-form-tel">Телефон</label>
+          <input type="text" placeholder="+7 800 999-00-00" name="delivery-form-tel" id="delivery-form-tel">
+          <label class="delivery-form-label" for="delivery-form-adress">Адрес</label>
+          <input type="text" placeholder="ул. Большая Конюшенная, 19/8" name="delivery-form-adress" id="delivery-form-adress" required>
           <button class="button delivery-button" type="submit">Отправить</button>
         </form>
       </section>
